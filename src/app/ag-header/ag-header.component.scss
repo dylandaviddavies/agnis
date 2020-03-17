@@ -5,11 +5,12 @@
     align-items:center;
     border-bottom: 1px solid #e4e4e4;
     &__logo {
-        height:45px;
-        > img {
-            height:100%;
-            display:block;
-        }
+        font-size:40px;
+        line-height:1em;
+        margin-right:10px;
+        text-decoration:none;
+        color:inherit;
+        font-family: "Caveat", serif;
     }
     &__account {
         display:flex;
