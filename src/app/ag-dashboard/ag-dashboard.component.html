@@ -3,8 +3,8 @@
         <h3 class="ag-box__title">
             My Courses
         </h3>
-        <div class="ag-box__content" style="margin: 16px 0;">
-            <div class="ag-loading">
+        <div class="ag-box__content">
+            <div class="ag-loading d-flex flex-wrap align-items-stretch">
                 <app-ag-course-card *ngFor="let course of courses" 
                                 [title]="course.title" 
                                 [subtitle]="course.subtitle" 

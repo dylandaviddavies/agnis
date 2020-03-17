@@ -13,4 +13,12 @@ export class ApiService {
   getCourses(){
     return this.http.get<Object[]>(`${this.url}/courses.json`);
   }
+
+  getMyCourses(){
+    return this.http.get<Object[]>(`${this.url}/my-courses.json`);
+  }
+
+  getSuggestedCourses(){
+    return this.http.get<Object[]>(`${this.url}/suggested-courses.json`);
+  }
 }

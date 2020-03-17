@@ -12,10 +12,10 @@ export class AgDashboardComponent implements OnInit {
 
   constructor(private api: ApiService) {
 
-   }
+  }
 
   ngOnInit(): void {
-    this.api.getCourses().subscribe(d => this.courses = d);
+    this.api.getCourses().subscribe(d => this.courses = d.slice(0, 3));
   }
 
 }

@@ -1,1 +1,25 @@
-<p>ag-courses works!</p>
+<div class="ag-box">
+    <h3 class="ag-box__title">My Courses</h3>
+    <div class="ag-box__content ag-loading d-flex flex-wrap align-items-stretch">
+        <app-ag-course-card *ngFor="let course of myCourses" 
+                        [title]="course.title" 
+                        [subtitle]="course.subtitle" 
+                        [img]="course.img" 
+                        [oldPrice]="course.oldPrice"
+                        [price]="course.price"
+                        [rating]="course.rating"></app-ag-course-card>
+    </div>
+</div>
+
+<div class="ag-box">
+    <h3 class="ag-box__title">Suggested Courses</h3>
+    <div class="ag-box__content ag-loading d-flex flex-wrap align-items-stretch">
+        <app-ag-course-card *ngFor="let course of suggestedCourses" 
+                        [title]="course.title" 
+                        [subtitle]="course.subtitle" 
+                        [img]="course.img" 
+                        [oldPrice]="course.oldPrice"
+                        [price]="course.price"
+                        [rating]="course.rating"></app-ag-course-card>
+    </div>
+</div>
