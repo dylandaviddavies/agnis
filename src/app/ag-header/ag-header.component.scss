@@ -1,0 +1,67 @@
+.ag-header {
+    padding: 16px 32px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    border-bottom: 1px solid #e4e4e4;
+    &__logo {
+        height:45px;
+        > img {
+            height:100%;
+            display:block;
+        }
+    }
+    &__account {
+        display:flex;
+        align-items:center;
+        background:none;
+        border:none;
+        padding: 0 12px;
+        > img {
+            border-radius:100%;
+            display:block;
+            height:35px;
+        }
+    }
+    &__notifications {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding: 6px;
+        margin: 6px;
+        position:relative;
+        &--active {            
+            &:before {
+                background:rgb(144, 60, 255);
+                content:"";
+                width:9px;
+                height:9px;
+                font-size:8px;
+                position:absolute;
+                top:1px;
+                right:5px;
+                border-radius:100%;
+                border:2px solid #fff;
+            }
+        }
+    }
+    &__nav {
+        flex-grow:1;
+        > ul {
+            display:flex;
+            list-style-type:none;
+            margin:0;
+            padding:0 12px;
+            > li {
+                > a {
+                    font-size:14px;
+                    color:inherit;
+                    text-decoration:none;
+                    display:block;
+                    padding: 8px 12px;
+                }
+            }
+        }
+    }
+
+}
