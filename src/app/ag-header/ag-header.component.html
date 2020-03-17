@@ -4,19 +4,9 @@
     </a>
     <nav class="ag-header__nav">
         <ul>
-            <li>
-                <a href="#">
-                    Co-op
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Documents
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Interviews
+            <li *ngFor="let link of links">
+                <a [routerLink]="link.link">
+                    {{link.text}}
                 </a>
             </li>
         </ul>

@@ -1,4 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Material+Icons+Round|Caveat|Poppins:400,500,600,700&display=swap';
+
+$primary: rgb(144, 60, 255);
+
 body,input,textarea,select,option,button {
     font-family: "Poppins", sans-serif;
 }
@@ -13,6 +16,35 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-weight:500;
     margin:0;
+}
+
+.ag-loading {
+    &:empty {
+        &:before {
+            content: "";
+            width:50px;
+            height:50px;
+            margin: 0 auto;
+            display:block;
+            border-radius:100%;            
+            border: 8px solid $primary;
+            border-bottom-color: transparent;
+            animation: spin linear 1.5s infinite;
+        }
+    }
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 body{

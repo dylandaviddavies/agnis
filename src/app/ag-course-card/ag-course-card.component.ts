@@ -12,6 +12,8 @@ export class AgCourseCardComponent implements OnInit {
   @Input() term: string;
   @Input() subtitle: string;
   @Input() rating: number;
+  @Input() price: string;
+  @Input() oldPrice: string;
 
   constructor() { }
 

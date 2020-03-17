@@ -12,6 +12,7 @@ import { AgRankingsComponent } from './ag-rankings/ag-rankings.component';
 import { AgCoursesComponent } from './ag-courses/ag-courses.component';
 import { AgCourseCardComponent } from './ag-course-card/ag-course-card.component';
 import { AgRatingComponent } from './ag-rating/ag-rating.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AgRatingComponent } from './ag-rating/ag-rating.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

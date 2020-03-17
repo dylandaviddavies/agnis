@@ -1,8 +1,8 @@
 <div>
-  <app-ag-header></app-ag-header>
+  <app-ag-header [links]="headerLinks"></app-ag-header>
   <div style="display:flex;">
     <app-ag-sidebar></app-ag-sidebar>
-    <div style="padding:16px 32px;">
+    <div class="flex-grow-1" style="padding:16px 32px;">
       <router-outlet></router-outlet>
     </div>
   </div>

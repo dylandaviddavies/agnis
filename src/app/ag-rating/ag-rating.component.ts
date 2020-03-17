@@ -13,14 +13,12 @@ export class AgRatingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    for(let i = 0; i < 5; i++) {
-      let icon = 'star';
-      if (this.value > i && this.value < i + 1) {
+    for (let i = 1; i <= 5; i++) {
+      let icon = 'star_outline';
+      if (i <= this.value)
+        icon = 'star';
+      else if (i > this.value && i < this.value + 1)
         icon = 'star_half';
-      }
-      else if (i > this.value) {
-        icon = 'star_outline';
-      }
       this.stars.push(icon);
     }
   }

@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  headerLinks = [
+    {
+      link: "/co-op",
+      text: "Co-op"
+    },
+    {
+      link: "/documents",
+      text: "Documents"
+    },
+    {
+      link: "/interviews",
+      text: "Interviews"
+    }
+  ];
   title = 'agnis';
 }

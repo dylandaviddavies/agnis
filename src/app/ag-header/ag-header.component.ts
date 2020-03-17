@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ag-header',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ag-header.component.scss']
 })
 export class AgHeaderComponent implements OnInit {
-
+  @Input() links : Array<string>;
+  
   constructor() { }
 
   ngOnInit(): void {
