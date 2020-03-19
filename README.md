@@ -1,5 +1,5 @@
 # Agnis
-Online learning course site. Angular + Sass. (WIP)
+e-Learning website mockup. Angular + Sass. (WIP)
 
 ## Mock API Project
 [https://github.com/dylandaviddavies/agnis-api](https://github.com/dylandaviddavies/agnis-api)
